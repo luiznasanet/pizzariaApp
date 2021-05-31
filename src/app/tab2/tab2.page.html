@@ -1,17 +1,122 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
+<ion-header>
+  <ion-toolbar color="marrom">
     <ion-title>
-      Tab 2
+     Bebidas
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" color="light">
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-grid class="ion-text-center ion-no-padding">
+
+    <ion-row class="ion-no-padding">
+
+      <ion-col size="6" class="ion-no-padding">
+        <ion-card>
+          <img src="https://delivery.cachorraolanches.com.br/apetite/uploads/m_37351512688138.jpg"
+           alt="Refrigerantes">
+           <ion-item lines="none" class="ion-no-padding">
+             <ion-label>
+               Refrigerante 600ml
+             </ion-label>
+           </ion-item>
+           <ion-item lines="none" class="ion-no-padding">
+            <ion-badge color="dark">600ml</ion-badge>
+            <ion-note slot="end" color="dark">R$ <span>4,00</span></ion-note>
+           </ion-item>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="6" class="ion-no-padding">
+        <ion-card>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6iWqgjg6qjsms6jJHyCy9HtDeuRUvzzUqaA&usqp=CAU"
+           alt="Refrigerantes">
+           <ion-item lines="none" class="ion-no-padding">
+             <ion-label>
+               Refrigerante 2 litros
+             </ion-label>
+           </ion-item>
+           <ion-item lines="none" class="ion-no-padding">
+            <ion-badge color="dark">2l</ion-badge>
+            <ion-note slot="end" color="dark">R$ <span>7,00</span></ion-note>
+           </ion-item>
+        </ion-card>
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row class="ion-no-padding">
+
+      <ion-col size="6" class="ion-no-padding">
+        <ion-card>
+          <img src="data:image/jpeg;base64,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"
+           alt="Suco">
+           <ion-item lines="none" class="ion-no-padding">
+             <ion-label>
+               Suco 700ml
+             </ion-label>
+           </ion-item>
+           <ion-item lines="none" class="ion-no-padding">
+            <ion-badge color="dark">700ml</ion-badge>
+            <ion-note slot="end" color="dark">R$ <span>8,00</span></ion-note>
+           </ion-item>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="6" class="ion-no-padding">
+        <ion-card>
+          <img src="https://tapertin.com.br/menu/assets/cardapios/4/imgitem/2701202037__cardapio.png"
+           alt="Cerveja">
+           <ion-item lines="none" class="ion-no-padding">
+             <ion-label>
+               Cerveja Lata
+             </ion-label>
+           </ion-item>
+           <ion-item lines="none" class="ion-no-padding">
+            <ion-badge color="dark">350ml</ion-badge>
+            <ion-note slot="end" color="dark">R$ <span>5,00</span></ion-note>
+           </ion-item>
+        </ion-card>
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row class="ion-no-padding">
+
+      <ion-col size="6" class="ion-no-padding">
+        <ion-card>
+          <img src="https://cdn.falauniversidades.com.br/wp-content/uploads/2016/08/abridor-de-garrafa-cerveja-papa-tampas-original-nf-11261-MLB20040926123_012014-F.jpg"
+           alt="Cerveja">
+           <ion-item lines="none" class="ion-no-padding">
+             <ion-label>
+               Cerveja 1l
+             </ion-label>
+           </ion-item>
+           <ion-item lines="none" class="ion-no-padding">
+            <ion-badge color="dark">1l</ion-badge>
+            <ion-note slot="end" color="dark">R$ <span>8,00</span></ion-note>
+           </ion-item>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="6" class="ion-no-padding">
+        <ion-card>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStvfPYYLulIwBlTMKzJ2mqS0Hojz8tE8fjLg&usqp=CAU"
+           alt="agua">
+           <ion-item lines="none" class="ion-no-padding">
+             <ion-label>
+               Água
+             </ion-label>
+           </ion-item>
+           <ion-item lines="none" class="ion-no-padding">
+            <ion-badge color="dark">500ml</ion-badge>
+            <ion-note slot="end" color="dark">R$ <span>2,00</span></ion-note>
+           </ion-item>
+        </ion-card>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+
 </ion-content>
